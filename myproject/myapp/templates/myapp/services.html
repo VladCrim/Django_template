@@ -1,0 +1,82 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Наши услуги{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 text-center mb-5">
+        <h1>Наши услуги</h1>
+        <p class="lead">Мы предлагаем полный спектр IT-решений для вашего бизнеса</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Веб-разработка</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>✔ Корпоративные сайты</li>
+                    <li>✔ Интернет-магазины</li>
+                    <li>✔ Веб-порталы</li>
+                    <li>✔ CRM-системы</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-outline-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">Мобильные приложения</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>✔ iOS-приложения</li>
+                    <li>✔ Android-приложения</li>
+                    <li>✔ Кроссплатформенные решения</li>
+                    <li>✔ Гибридные приложения</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-outline-success">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">Data Science</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>✔ Анализ больших данных</li>
+                    <li>✔ Машинное обучение</li>
+                    <li>✔ Прогнозная аналитика</li>
+                    <li>✔ Визуализация данных</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-outline-info">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="alert alert-warning">
+            <h4 class="alert-heading">Специальное предложение!</h4>
+            <p>При заказе комплексного решения (веб + мобильное приложение) вы получаете скидку 15%.</p>
+            <hr>
+            <p class="mb-0">Предложение действует до 31 декабря 2025 года.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

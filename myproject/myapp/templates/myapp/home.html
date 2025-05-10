@@ -1,0 +1,47 @@
+{% extends 'myapp/base.html' %}
+{% load static %}  <!-- Добавьте эту строку в начало -->
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto text-center">
+        <h1 class="display-4 mb-4">Добро пожаловать в IT-компанию "FutureTech"!</h1>
+        <p class="lead">Мы создаем инновационные решения для вашего бизнеса.</p>
+        <!-- Обновленная строка с изображением -->
+        <img src="{% static 'myapp/images/scale.png' %}" alt="Главное изображение" class="img-fluid rounded my-4">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="{% url 'services' %}" class="btn btn-primary btn-lg px-4">Наши услуги</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-secondary btn-lg px-4">Связаться с нами</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Веб-разработка</h5>
+                <p class="card-text">Создаем современные веб-приложения на Django, React и Vue.js.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Мобильные приложения</h5>
+                <p class="card-text">Разработка кроссплатформенных приложений на Flutter и React Native.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Data Science</h5>
+                <p class="card-text">Анализ данных и машинное обучение для вашего бизнеса.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

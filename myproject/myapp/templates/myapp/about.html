@@ -1,0 +1,60 @@
+{% extends 'myapp/base.html' %}
+{% load static %}  <!-- Добавьте эту строку в начало файла -->
+
+{% block title %}О компании{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6">
+        <h1 class="mb-4">О нашей компании</h1>
+        <p class="lead">FutureTech - это команда профессионалов, работающая с 2015 года.</p>
+        <p>Мы специализируемся на полном цикле разработки программного обеспечения: от анализа бизнес-процессов до внедрения и поддержки.</p>
+        <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">✅ 50+ успешных проектов</li>
+            <li class="list-group-item">✅ 20 постоянных клиентов</li>
+            <li class="list-group-item">✅ Команда из 15 специалистов</li>
+        </ul>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Наша команда</h5>
+                <img src="{% static 'myapp/images/com.png' %}" alt="Наша команда" class="img-fluid rounded mb-3">
+                <p class="card-text">Мы объединяем опытных разработчиков, дизайнеров и аналитиков для создания лучших решений.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12">
+        <h2>Наши принципы</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Качество</h5>
+                        <p class="card-text">Мы используем только проверенные технологии и лучшие практики разработки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Надежность</h5>
+                        <p class="card-text">Наши решения работают стабильно даже при высоких нагрузках.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-info mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Инновации</h5>
+                        <p class="card-text">Мы всегда в курсе последних технологических трендов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
